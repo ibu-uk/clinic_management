@@ -1,0 +1,967 @@
+[22-Jan-2025 09:29:56 Europe/Berlin] Received POST data: Array
+(
+    [contract_type] => new
+    [equipment_name] => usman
+    [equipment_model] => 2525ss
+    [company_name] => bato clinic
+    [contract_number] => 101010
+    [contact_number] => 65065000
+    [contract_start_date] => 2025-01-01
+    [contract_end_date] => 2026-01-01
+    [payment_type] => installment
+    [total_cost] => 6500
+    [down_payment] => 2000
+    [num_installments] => 12
+    [formToken] => m67n8ium1p10bzx9s9i
+    [maintenance] => Array
+        (
+            [0] => 3
+        )
+
+)
+
+[22-Jan-2025 09:29:56 Europe/Berlin] Received FILES data: Array
+(
+    [contract_file] => Array
+        (
+            [name] => RCD- Points to Address.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php73C0.tmp
+            [error] => 0
+            [size] => 660545
+        )
+
+)
+
+[22-Jan-2025 09:29:56 Europe/Berlin] Payment details: Array
+(
+    [payment_type] => installment
+    [total_cost] => 6500
+    [down_payment] => 2000
+    [remaining_amount] => 4500
+    [monthly_installment] => 375
+    [num_installments] => 12
+)
+
+[22-Jan-2025 09:29:56 Europe/Berlin] SQL Query: INSERT INTO equipment (
+            equipment_name, equipment_model, company_name, contract_number,
+            contact_number, contract_type, contract_start_date, contract_end_date,
+            total_cost, payment_type, down_payment, remaining_amount,
+            monthly_installment, num_installments, maintenance_schedule, 
+            contract_file, status
+        ) VALUES (
+            :equipment_name, :equipment_model, :company_name, :contract_number,
+            :contact_number, :contract_type, :contract_start_date, :contract_end_date,
+            :total_cost, :payment_type, :down_payment, :remaining_amount,
+            :monthly_installment, :num_installments, :maintenance_schedule,
+            :contract_file, 'active'
+        )
+[22-Jan-2025 09:29:56 Europe/Berlin] Query Parameters: Array
+(
+    [:equipment_name] => usman
+    [:equipment_model] => 2525ss
+    [:company_name] => bato clinic
+    [:contract_number] => 101010
+    [:contact_number] => 65065000
+    [:contract_type] => new
+    [:contract_start_date] => 2025-01-01
+    [:contract_end_date] => 2026-01-01
+    [:total_cost] => 6500
+    [:payment_type] => installment
+    [:down_payment] => 2000
+    [:remaining_amount] => 4500
+    [:monthly_installment] => 375
+    [:num_installments] => 12
+    [:maintenance_schedule] => 3
+    [:contract_file] => 6790ac8437ea6_1737534596.pdf
+)
+
+[22-Jan-2025 09:29:56 Europe/Berlin] Sending response: Array
+(
+    [success] => 1
+    [message] => Equipment record created successfully
+)
+
+[22-Jan-2025 09:29:56 Europe/Berlin] Received POST data: Array
+(
+    [contract_type] => new
+    [equipment_name] => usman
+    [equipment_model] => 2525ss
+    [company_name] => bato clinic
+    [contract_number] => 101010
+    [contact_number] => 65065000
+    [contract_start_date] => 2025-01-01
+    [contract_end_date] => 2026-01-01
+    [payment_type] => installment
+    [total_cost] => 6500
+    [down_payment] => 2000
+    [num_installments] => 12
+    [maintenance] => Array
+        (
+            [0] => 3
+        )
+
+    [formToken] => 1737534429572
+)
+
+[22-Jan-2025 09:29:56 Europe/Berlin] Received FILES data: Array
+(
+    [contract_file] => Array
+        (
+            [name] => RCD- Points to Address.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php73C1.tmp
+            [error] => 0
+            [size] => 660545
+        )
+
+)
+
+[22-Jan-2025 09:29:56 Europe/Berlin] Error creating equipment: Contract number already exists
+[22-Jan-2025 09:29:56 Europe/Berlin] Stack trace: #0 {main}
+[22-Jan-2025 09:29:56 Europe/Berlin] Sending error response: Array
+(
+    [success] => 
+    [message] => Contract number already exists
+)
+
+[22-Jan-2025 09:51:33 Europe/Berlin] Received POST data: Array
+(
+    [contract_type] => upgrade
+    [equipment_name] => ibrahim
+    [equipment_model] => 44ibu
+    [company_name] => 40404040
+    [contract_number] => 75757575
+    [contact_number] => 5454545454
+    [contract_start_date] => 2025-01-01
+    [contract_end_date] => 2026-01-01
+    [payment_type] => installment
+    [total_cost] => 8500
+    [down_payment] => 2500
+    [num_installments] => 12
+    [formToken] => m67o0c7yntw1trqmqci
+    [maintenance] => Array
+        (
+            [0] => 3
+        )
+
+)
+
+[22-Jan-2025 09:51:33 Europe/Berlin] Received FILES data: Array
+(
+    [contract_file] => Array
+        (
+            [name] => quotationMASHAAN.docx4.docx
+            [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+            [tmp_name] => C:\xampp\tmp\php4128.tmp
+            [error] => 0
+            [size] => 45475
+        )
+
+)
+
+[22-Jan-2025 09:51:33 Europe/Berlin] Payment details: Array
+(
+    [payment_type] => installment
+    [total_cost] => 8500
+    [down_payment] => 2500
+    [remaining_amount] => 6000
+    [monthly_installment] => 500
+    [num_installments] => 12
+)
+
+[22-Jan-2025 09:51:33 Europe/Berlin] SQL Query: INSERT INTO equipment (
+            equipment_name, equipment_model, company_name, contract_number,
+            contact_number, contract_type, contract_start_date, contract_end_date,
+            total_cost, payment_type, down_payment, remaining_amount,
+            monthly_installment, num_installments, maintenance_schedule, 
+            contract_file, status
+        ) VALUES (
+            :equipment_name, :equipment_model, :company_name, :contract_number,
+            :contact_number, :contract_type, :contract_start_date, :contract_end_date,
+            :total_cost, :payment_type, :down_payment, :remaining_amount,
+            :monthly_installment, :num_installments, :maintenance_schedule,
+            :contract_file, 'active'
+        )
+[22-Jan-2025 09:51:33 Europe/Berlin] Query Parameters: Array
+(
+    [:equipment_name] => ibrahim
+    [:equipment_model] => 44ibu
+    [:company_name] => 40404040
+    [:contract_number] => 75757575
+    [:contact_number] => 5454545454
+    [:contract_type] => upgrade
+    [:contract_start_date] => 2025-01-01
+    [:contract_end_date] => 2026-01-01
+    [:total_cost] => 8500
+    [:payment_type] => installment
+    [:down_payment] => 2500
+    [:remaining_amount] => 6000
+    [:monthly_installment] => 500
+    [:num_installments] => 12
+    [:maintenance_schedule] => 3
+    [:contract_file] => 6790b195f33bc_1737535893.docx
+)
+
+[22-Jan-2025 09:51:33 Europe/Berlin] Sending response: Array
+(
+    [success] => 1
+    [message] => Equipment record created successfully
+)
+
+[22-Jan-2025 09:51:33 Europe/Berlin] Received POST data: Array
+(
+    [contract_type] => upgrade
+    [equipment_name] => ibrahim
+    [equipment_model] => 44ibu
+    [company_name] => 40404040
+    [contract_number] => 75757575
+    [contact_number] => 5454545454
+    [contract_start_date] => 2025-01-01
+    [contract_end_date] => 2026-01-01
+    [payment_type] => installment
+    [total_cost] => 8500
+    [down_payment] => 2500
+    [num_installments] => 12
+    [maintenance] => Array
+        (
+            [0] => 3
+        )
+
+)
+
+[22-Jan-2025 09:51:33 Europe/Berlin] Received FILES data: Array
+(
+    [contract_file] => Array
+        (
+            [name] => quotationMASHAAN.docx4.docx
+            [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+            [tmp_name] => C:\xampp\tmp\php4129.tmp
+            [error] => 0
+            [size] => 45475
+        )
+
+)
+
+[22-Jan-2025 09:51:34 Europe/Berlin] Error creating equipment: Contract number already exists
+[22-Jan-2025 09:51:34 Europe/Berlin] Stack trace: #0 {main}
+[22-Jan-2025 09:51:34 Europe/Berlin] Sending error response: Array
+(
+    [success] => 
+    [message] => Contract number already exists
+)
+
+[22-Jan-2025 10:44:21 Europe/Berlin] Received POST data: Array
+(
+    [contract_type] => new
+    [equipment_name] => adam ibrahim
+    [equipment_model] => laser machine
+    [company_name] => shield prime
+    [contract_number] => 7867865
+    [contact_number] => 9881660605
+    [contract_start_date] => 2025-01-01
+    [contract_end_date] => 2026-01-01
+    [payment_type] => one_time
+    [total_cost] => 5000
+    [down_payment] => 
+    [num_installments] => 
+    [formToken] => m67pw8e95oo8n6kq2z4
+    [maintenance] => Array
+        (
+            [0] => 6
+        )
+
+)
+
+[22-Jan-2025 10:44:21 Europe/Berlin] Received FILES data: Array
+(
+    [contract_file] => Array
+        (
+            [name] => ASIM.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php96D2.tmp
+            [error] => 0
+            [size] => 348375
+        )
+
+)
+
+[22-Jan-2025 10:44:21 Europe/Berlin] Payment details: Array
+(
+    [payment_type] => one_time
+    [total_cost] => 5000
+    [down_payment] => 0
+    [remaining_amount] => 0
+    [monthly_installment] => 0
+    [num_installments] => 
+)
+
+[22-Jan-2025 10:44:21 Europe/Berlin] SQL Query: INSERT INTO equipment (
+            equipment_name, equipment_model, company_name, contract_number,
+            contact_number, contract_type, contract_start_date, contract_end_date,
+            total_cost, payment_type, down_payment, remaining_amount,
+            monthly_installment, num_installments, maintenance_schedule, 
+            contract_file, status
+        ) VALUES (
+            :equipment_name, :equipment_model, :company_name, :contract_number,
+            :contact_number, :contract_type, :contract_start_date, :contract_end_date,
+            :total_cost, :payment_type, :down_payment, :remaining_amount,
+            :monthly_installment, :num_installments, :maintenance_schedule,
+            :contract_file, 'active'
+        )
+[22-Jan-2025 10:44:21 Europe/Berlin] Query Parameters: Array
+(
+    [:equipment_name] => adam ibrahim
+    [:equipment_model] => laser machine
+    [:company_name] => shield prime
+    [:contract_number] => 7867865
+    [:contact_number] => 9881660605
+    [:contract_type] => new
+    [:contract_start_date] => 2025-01-01
+    [:contract_end_date] => 2026-01-01
+    [:total_cost] => 5000
+    [:payment_type] => one_time
+    [:down_payment] => 0
+    [:remaining_amount] => 0
+    [:monthly_installment] => 0
+    [:num_installments] => 
+    [:maintenance_schedule] => 6
+    [:contract_file] => 6790bdf5a100a_1737539061.pdf
+)
+
+[22-Jan-2025 10:44:21 Europe/Berlin] Sending response: Array
+(
+    [success] => 1
+    [message] => Equipment record created successfully
+)
+
+[22-Jan-2025 10:44:21 Europe/Berlin] Received POST data: Array
+(
+    [contract_type] => new
+    [equipment_name] => adam ibrahim
+    [equipment_model] => laser machine
+    [company_name] => shield prime
+    [contract_number] => 7867865
+    [contact_number] => 9881660605
+    [contract_start_date] => 2025-01-01
+    [contract_end_date] => 2026-01-01
+    [payment_type] => one_time
+    [total_cost] => 5000
+    [down_payment] => 
+    [num_installments] => 
+    [maintenance] => Array
+        (
+            [0] => 6
+        )
+
+)
+
+[22-Jan-2025 10:44:21 Europe/Berlin] Received FILES data: Array
+(
+    [contract_file] => Array
+        (
+            [name] => ASIM.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php96D3.tmp
+            [error] => 0
+            [size] => 348375
+        )
+
+)
+
+[22-Jan-2025 10:44:21 Europe/Berlin] Error creating equipment: Contract number already exists
+[22-Jan-2025 10:44:21 Europe/Berlin] Stack trace: #0 {main}
+[22-Jan-2025 10:44:21 Europe/Berlin] Sending error response: Array
+(
+    [success] => 
+    [message] => Contract number already exists
+)
+
+[27-Jan-2025 08:21:41 Europe/Berlin] Received POST data: Array
+(
+    [contract_type] => new
+    [equipment_name] => bato prime
+    [equipment_model] => 252525
+    [company_name] => the sild
+    [contract_number] => 101010
+    [contact_number] => 65065000
+    [contract_start_date] => 2025-01-27
+    [contract_end_date] => 2026-01-27
+    [payment_type] => installment
+    [total_cost] => 6500
+    [down_payment] => 2500
+    [num_installments] => 12
+    [formToken] => m6eq00gxi42l0bca5q
+    [maintenance] => Array
+        (
+            [0] => 3
+        )
+
+)
+
+[27-Jan-2025 08:21:41 Europe/Berlin] Received FILES data: Array
+(
+    [contract_file] => Array
+        (
+            [name] => RCD- Points to Address.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php2E4C.tmp
+            [error] => 0
+            [size] => 660545
+        )
+
+)
+
+[27-Jan-2025 08:21:41 Europe/Berlin] Payment details: Array
+(
+    [payment_type] => installment
+    [total_cost] => 6500
+    [down_payment] => 2500
+    [remaining_amount] => 4000
+    [monthly_installment] => 333.33333333333
+    [num_installments] => 12
+)
+
+[27-Jan-2025 08:21:41 Europe/Berlin] SQL Query: INSERT INTO equipment (
+            equipment_name, equipment_model, company_name, contract_number,
+            contact_number, contract_type, contract_start_date, contract_end_date,
+            total_cost, payment_type, down_payment, remaining_amount,
+            monthly_installment, num_installments, maintenance_schedule, 
+            contract_file, status
+        ) VALUES (
+            :equipment_name, :equipment_model, :company_name, :contract_number,
+            :contact_number, :contract_type, :contract_start_date, :contract_end_date,
+            :total_cost, :payment_type, :down_payment, :remaining_amount,
+            :monthly_installment, :num_installments, :maintenance_schedule,
+            :contract_file, 'active'
+        )
+[27-Jan-2025 08:21:41 Europe/Berlin] Query Parameters: Array
+(
+    [:equipment_name] => bato prime
+    [:equipment_model] => 252525
+    [:company_name] => the sild
+    [:contract_number] => 101010
+    [:contact_number] => 65065000
+    [:contract_type] => new
+    [:contract_start_date] => 2025-01-27
+    [:contract_end_date] => 2026-01-27
+    [:total_cost] => 6500
+    [:payment_type] => installment
+    [:down_payment] => 2500
+    [:remaining_amount] => 4000
+    [:monthly_installment] => 333.33333333333
+    [:num_installments] => 12
+    [:maintenance_schedule] => 3
+    [:contract_file] => 67973405422e1_1737962501.pdf
+)
+
+[27-Jan-2025 08:21:41 Europe/Berlin] Sending response: Array
+(
+    [success] => 1
+    [message] => Equipment record created successfully
+)
+
+[27-Jan-2025 08:24:36 Europe/Berlin] Received POST data: Array
+(
+    [contract_type] => renew
+    [equipment_name] => usman
+    [equipment_model] => laser machine
+    [company_name] => bato clinic
+    [contract_number] => 75757575
+    [contact_number] => 5454545454
+    [contract_start_date] => 2025-01-01
+    [contract_end_date] => 2026-01-01
+    [payment_type] => one_time
+    [total_cost] => 8500
+    [down_payment] => 
+    [num_installments] => 
+    [formToken] => m6eq3rt07vakkrgxvrc
+    [maintenance] => Array
+        (
+            [0] => 6
+        )
+
+)
+
+[27-Jan-2025 08:24:36 Europe/Berlin] Received FILES data: Array
+(
+    [contract_file] => Array
+        (
+            [name] => ASIM IP.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpDB7B.tmp
+            [error] => 0
+            [size] => 349685
+        )
+
+)
+
+[27-Jan-2025 08:24:36 Europe/Berlin] Payment details: Array
+(
+    [payment_type] => one_time
+    [total_cost] => 8500
+    [down_payment] => 0
+    [remaining_amount] => 0
+    [monthly_installment] => 0
+    [num_installments] => 
+)
+
+[27-Jan-2025 08:24:36 Europe/Berlin] SQL Query: INSERT INTO equipment (
+            equipment_name, equipment_model, company_name, contract_number,
+            contact_number, contract_type, contract_start_date, contract_end_date,
+            total_cost, payment_type, down_payment, remaining_amount,
+            monthly_installment, num_installments, maintenance_schedule, 
+            contract_file, status
+        ) VALUES (
+            :equipment_name, :equipment_model, :company_name, :contract_number,
+            :contact_number, :contract_type, :contract_start_date, :contract_end_date,
+            :total_cost, :payment_type, :down_payment, :remaining_amount,
+            :monthly_installment, :num_installments, :maintenance_schedule,
+            :contract_file, 'active'
+        )
+[27-Jan-2025 08:24:36 Europe/Berlin] Query Parameters: Array
+(
+    [:equipment_name] => usman
+    [:equipment_model] => laser machine
+    [:company_name] => bato clinic
+    [:contract_number] => 75757575
+    [:contact_number] => 5454545454
+    [:contract_type] => renew
+    [:contract_start_date] => 2025-01-01
+    [:contract_end_date] => 2026-01-01
+    [:total_cost] => 8500
+    [:payment_type] => one_time
+    [:down_payment] => 0
+    [:remaining_amount] => 0
+    [:monthly_installment] => 0
+    [:num_installments] => 
+    [:maintenance_schedule] => 6
+    [:contract_file] => 679734b4993bb_1737962676.pdf
+)
+
+[27-Jan-2025 08:24:36 Europe/Berlin] Sending response: Array
+(
+    [success] => 1
+    [message] => Equipment record created successfully
+)
+
+[03-Feb-2025 11:52:25 Europe/Berlin] Received POST data: Array
+(
+    [contract_type] => new
+    [equipment_name] => laser jasmine
+    [equipment_model] => 320320
+    [company_name] => bato clinic
+    [contract_number] => 121200
+    [contact_number] => 52525252
+    [contract_start_date] => 2025-02-01
+    [contract_end_date] => 2026-02-01
+    [payment_type] => installment
+    [total_cost] => 6500
+    [down_payment] => 2500
+    [num_installments] => 12
+    [formToken] => m6oxlz9ri655yp32mzi
+    [maintenance] => Array
+        (
+            [0] => 3
+        )
+
+)
+
+[03-Feb-2025 11:52:25 Europe/Berlin] Received FILES data: Array
+(
+    [contract_file] => Array
+        (
+            [name] => Mashaan invoice CCTV.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpA0BD.tmp
+            [error] => 0
+            [size] => 349263
+        )
+
+)
+
+[03-Feb-2025 11:52:25 Europe/Berlin] Payment details: Array
+(
+    [payment_type] => installment
+    [total_cost] => 6500
+    [down_payment] => 2500
+    [remaining_amount] => 4000
+    [monthly_installment] => 333.33333333333
+    [num_installments] => 12
+)
+
+[03-Feb-2025 11:52:25 Europe/Berlin] SQL Query: INSERT INTO equipment (
+            equipment_name, equipment_model, company_name, contract_number,
+            contact_number, contract_type, contract_start_date, contract_end_date,
+            total_cost, payment_type, down_payment, remaining_amount,
+            monthly_installment, num_installments, maintenance_schedule, 
+            contract_file, status
+        ) VALUES (
+            :equipment_name, :equipment_model, :company_name, :contract_number,
+            :contact_number, :contract_type, :contract_start_date, :contract_end_date,
+            :total_cost, :payment_type, :down_payment, :remaining_amount,
+            :monthly_installment, :num_installments, :maintenance_schedule,
+            :contract_file, 'active'
+        )
+[03-Feb-2025 11:52:25 Europe/Berlin] Query Parameters: Array
+(
+    [:equipment_name] => laser jasmine
+    [:equipment_model] => 320320
+    [:company_name] => bato clinic
+    [:contract_number] => 121200
+    [:contact_number] => 52525252
+    [:contract_type] => new
+    [:contract_start_date] => 2025-02-01
+    [:contract_end_date] => 2026-02-01
+    [:total_cost] => 6500
+    [:payment_type] => installment
+    [:down_payment] => 2500
+    [:remaining_amount] => 4000
+    [:monthly_installment] => 333.33333333333
+    [:num_installments] => 12
+    [:maintenance_schedule] => 3
+    [:contract_file] => 67a09fe92cadb_1738579945.pdf
+)
+
+[03-Feb-2025 11:52:25 Europe/Berlin] Sending response: Array
+(
+    [success] => 1
+    [message] => Equipment record created successfully
+)
+
+[15-Feb-2025 13:23:34 Europe/Berlin] Received POST data: Array
+(
+    [contract_type] => new
+    [equipment_name] => laser jasmine
+    [equipment_model] => 252525L
+    [company_name] => bato clinic
+    [contract_number] => 75757575
+    [contact_number] => 66680241
+    [contract_start_date] => 2025-02-01
+    [contract_end_date] => 2026-02-01
+    [payment_type] => installment
+    [total_cost] => 8500
+    [down_payment] => 2500
+    [num_installments] => 12
+    [formToken] => m7665fjwa59lw3tp2ss
+    [maintenance] => Array
+        (
+            [0] => 3
+        )
+
+)
+
+[15-Feb-2025 13:23:34 Europe/Berlin] Received FILES data: Array
+(
+    [contract_file] => Array
+        (
+            [name] => invoice__1768_-_bato_-_domain__server__apple_and_ssl_renewal_one_year.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php1453.tmp
+            [error] => 0
+            [size] => 122072
+        )
+
+)
+
+[15-Feb-2025 13:23:34 Europe/Berlin] Payment details: Array
+(
+    [payment_type] => installment
+    [total_cost] => 8500
+    [down_payment] => 2500
+    [remaining_amount] => 6000
+    [monthly_installment] => 500
+    [num_installments] => 12
+)
+
+[15-Feb-2025 13:23:34 Europe/Berlin] SQL Query: INSERT INTO equipment (
+            equipment_name, equipment_model, company_name, contract_number,
+            contact_number, contract_type, contract_start_date, contract_end_date,
+            total_cost, payment_type, down_payment, remaining_amount,
+            monthly_installment, num_installments, maintenance_schedule, 
+            contract_file, status
+        ) VALUES (
+            :equipment_name, :equipment_model, :company_name, :contract_number,
+            :contact_number, :contract_type, :contract_start_date, :contract_end_date,
+            :total_cost, :payment_type, :down_payment, :remaining_amount,
+            :monthly_installment, :num_installments, :maintenance_schedule,
+            :contract_file, 'active'
+        )
+[15-Feb-2025 13:23:34 Europe/Berlin] Query Parameters: Array
+(
+    [:equipment_name] => laser jasmine
+    [:equipment_model] => 252525L
+    [:company_name] => bato clinic
+    [:contract_number] => 75757575
+    [:contact_number] => 66680241
+    [:contract_type] => new
+    [:contract_start_date] => 2025-02-01
+    [:contract_end_date] => 2026-02-01
+    [:total_cost] => 8500
+    [:payment_type] => installment
+    [:down_payment] => 2500
+    [:remaining_amount] => 6000
+    [:monthly_installment] => 500
+    [:num_installments] => 12
+    [:maintenance_schedule] => 3
+    [:contract_file] => 67b08746a760a_1739622214.pdf
+)
+
+[15-Feb-2025 13:23:34 Europe/Berlin] Sending response: Array
+(
+    [success] => 1
+    [message] => Equipment record created successfully
+)
+
+[18-Feb-2025 08:11:11 Europe/Berlin] Received POST data: Array
+(
+    [contract_type] => upgrade
+    [equipment_name] => bato prime
+    [equipment_model] => 252525L
+    [company_name] => bato clinic
+    [contract_number] => 101010
+    [contact_number] => 55445544
+    [contract_start_date] => 2025-02-01
+    [contract_end_date] => 2026-02-01
+    [payment_type] => one_time
+    [total_cost] => 8500
+    [down_payment] => 
+    [num_installments] => 
+    [formToken] => m7a5b9c06vmorfw5kds
+    [maintenance] => Array
+        (
+            [0] => 3
+        )
+
+)
+
+[18-Feb-2025 08:11:11 Europe/Berlin] Received FILES data: Array
+(
+    [contract_file] => Array
+        (
+            [name] => NADEEM1.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpA072.tmp
+            [error] => 0
+            [size] => 530486
+        )
+
+)
+
+[18-Feb-2025 08:11:11 Europe/Berlin] Payment details: Array
+(
+    [payment_type] => one_time
+    [total_cost] => 8500
+    [down_payment] => 0
+    [remaining_amount] => 0
+    [monthly_installment] => 0
+    [num_installments] => 
+)
+
+[18-Feb-2025 08:11:11 Europe/Berlin] SQL Query: INSERT INTO equipment (
+            equipment_name, equipment_model, company_name, contract_number,
+            contact_number, contract_type, contract_start_date, contract_end_date,
+            total_cost, payment_type, down_payment, remaining_amount,
+            monthly_installment, num_installments, maintenance_schedule, 
+            contract_file, status
+        ) VALUES (
+            :equipment_name, :equipment_model, :company_name, :contract_number,
+            :contact_number, :contract_type, :contract_start_date, :contract_end_date,
+            :total_cost, :payment_type, :down_payment, :remaining_amount,
+            :monthly_installment, :num_installments, :maintenance_schedule,
+            :contract_file, 'active'
+        )
+[18-Feb-2025 08:11:11 Europe/Berlin] Query Parameters: Array
+(
+    [:equipment_name] => bato prime
+    [:equipment_model] => 252525L
+    [:company_name] => bato clinic
+    [:contract_number] => 101010
+    [:contact_number] => 55445544
+    [:contract_type] => upgrade
+    [:contract_start_date] => 2025-02-01
+    [:contract_end_date] => 2026-02-01
+    [:total_cost] => 8500
+    [:payment_type] => one_time
+    [:down_payment] => 0
+    [:remaining_amount] => 0
+    [:monthly_installment] => 0
+    [:num_installments] => 
+    [:maintenance_schedule] => 3
+    [:contract_file] => 67b4328fa185f_1739862671.pdf
+)
+
+[18-Feb-2025 08:11:11 Europe/Berlin] Sending response: Array
+(
+    [success] => 1
+    [message] => Equipment record created successfully
+)
+
+[15-Mar-2025 09:00:54 Europe/Berlin] Received POST data: Array
+(
+    [contract_type] => new
+    [equipment_name] => tvs
+    [equipment_model] => tvs-1100
+    [company_name] => sild
+    [contract_number] => 15151510
+    [contact_number] => 80808080
+    [contract_start_date] => 2025-03-01
+    [contract_end_date] => 2026-03-01
+    [payment_type] => installment
+    [total_cost] => 9500
+    [down_payment] => 2000
+    [num_installments] => 12
+    [formToken] => m89x3heobpgl9oamh9
+    [maintenance] => Array
+        (
+            [0] => 6
+        )
+
+)
+
+[15-Mar-2025 09:00:54 Europe/Berlin] Received FILES data: Array
+(
+    [contract_file] => Array
+        (
+            [name] => Cancel Contract- tonescare.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpFB15.tmp
+            [error] => 0
+            [size] => 843761
+        )
+
+)
+
+[15-Mar-2025 09:00:54 Europe/Berlin] Payment details: Array
+(
+    [payment_type] => installment
+    [total_cost] => 9500
+    [down_payment] => 2000
+    [remaining_amount] => 7500
+    [monthly_installment] => 625
+    [num_installments] => 12
+)
+
+[15-Mar-2025 09:00:54 Europe/Berlin] SQL Query: INSERT INTO equipment (
+            equipment_name, equipment_model, company_name, contract_number,
+            contact_number, contract_type, contract_start_date, contract_end_date,
+            total_cost, payment_type, down_payment, remaining_amount,
+            monthly_installment, num_installments, maintenance_schedule, 
+            contract_file, status
+        ) VALUES (
+            :equipment_name, :equipment_model, :company_name, :contract_number,
+            :contact_number, :contract_type, :contract_start_date, :contract_end_date,
+            :total_cost, :payment_type, :down_payment, :remaining_amount,
+            :monthly_installment, :num_installments, :maintenance_schedule,
+            :contract_file, 'active'
+        )
+[15-Mar-2025 09:00:54 Europe/Berlin] Query Parameters: Array
+(
+    [:equipment_name] => tvs
+    [:equipment_model] => tvs-1100
+    [:company_name] => sild
+    [:contract_number] => 15151510
+    [:contact_number] => 80808080
+    [:contract_type] => new
+    [:contract_start_date] => 2025-03-01
+    [:contract_end_date] => 2026-03-01
+    [:total_cost] => 9500
+    [:payment_type] => installment
+    [:down_payment] => 2000
+    [:remaining_amount] => 7500
+    [:monthly_installment] => 625
+    [:num_installments] => 12
+    [:maintenance_schedule] => 6
+    [:contract_file] => 67d533b640d00_1742025654.pdf
+)
+
+[15-Mar-2025 09:00:54 Europe/Berlin] Sending response: Array
+(
+    [success] => 1
+    [message] => Equipment record created successfully
+)
+
+[15-Mar-2025 14:32:06 Europe/Berlin] Received POST data: Array
+(
+    [contract_type] => new
+    [equipment_name] => ibrahim212451
+    [equipment_model] => fhgfhg
+    [company_name] => ytgjjuhtrhj
+    [contract_number] => 123456
+    [contact_number] => 654321
+    [contract_start_date] => 2025-03-01
+    [contract_end_date] => 2026-03-01
+    [payment_type] => installment
+    [total_cost] => 4500
+    [down_payment] => 1500
+    [num_installments] => 12
+    [formToken] => m8a8xeum61splky3p0f
+    [maintenance] => Array
+        (
+            [0] => 3
+        )
+
+)
+
+[15-Mar-2025 14:32:06 Europe/Berlin] Received FILES data: Array
+(
+    [contract_file] => Array
+        (
+            [name] => Cancel Contract- tonescare.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php3492.tmp
+            [error] => 0
+            [size] => 843761
+        )
+
+)
+
+[15-Mar-2025 14:32:06 Europe/Berlin] Payment details: Array
+(
+    [payment_type] => installment
+    [total_cost] => 4500
+    [down_payment] => 1500
+    [remaining_amount] => 3000
+    [monthly_installment] => 250
+    [num_installments] => 12
+)
+
+[15-Mar-2025 14:32:06 Europe/Berlin] SQL Query: INSERT INTO equipment (
+            equipment_name, equipment_model, company_name, contract_number,
+            contact_number, contract_type, contract_start_date, contract_end_date,
+            total_cost, payment_type, down_payment, remaining_amount,
+            monthly_installment, num_installments, maintenance_schedule, 
+            contract_file, status
+        ) VALUES (
+            :equipment_name, :equipment_model, :company_name, :contract_number,
+            :contact_number, :contract_type, :contract_start_date, :contract_end_date,
+            :total_cost, :payment_type, :down_payment, :remaining_amount,
+            :monthly_installment, :num_installments, :maintenance_schedule,
+            :contract_file, 'active'
+        )
+[15-Mar-2025 14:32:06 Europe/Berlin] Query Parameters: Array
+(
+    [:equipment_name] => ibrahim212451
+    [:equipment_model] => fhgfhg
+    [:company_name] => ytgjjuhtrhj
+    [:contract_number] => 123456
+    [:contact_number] => 654321
+    [:contract_type] => new
+    [:contract_start_date] => 2025-03-01
+    [:contract_end_date] => 2026-03-01
+    [:total_cost] => 4500
+    [:payment_type] => installment
+    [:down_payment] => 1500
+    [:remaining_amount] => 3000
+    [:monthly_installment] => 250
+    [:num_installments] => 12
+    [:maintenance_schedule] => 3
+    [:contract_file] => 67d5815661a08_1742045526.pdf
+)
+
+[15-Mar-2025 14:32:06 Europe/Berlin] Sending response: Array
+(
+    [success] => 1
+    [message] => Equipment record created successfully
+)
+
